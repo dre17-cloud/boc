@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html style="--bs-primary: rgb(141,34,35);--bs-primary-rgb: 141,34,35;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>News - BOCDC</title>
+    <link rel="icon" type="image/png" sizes="523x477" href="assets/img/thumbnails/logo%20png.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Aladin.css">
+    <link rel="stylesheet" href="assets/css/Bakbak%20One.css">
+    <link rel="stylesheet" href="assets/css/Carattere.css">
+    <link rel="stylesheet" href="assets/css/Courgette.css">
+    <link rel="stylesheet" href="assets/css/Damion.css">
+    <link rel="stylesheet" href="assets/css/Open%20Sans.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
+    <style>
+     .news-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-card .p-4 {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-card .read-more {
+    margin-top: auto;
+}
+        
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        
+        .news-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #8d2223 0%, #a85858 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+        
+        .news-date {
+            color: #8d2223;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .news-category {
+            display: inline-block;
+            background-color: #8d2223;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .read-more {
+            color: #8d2223;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .read-more:hover {
+            color: #a85858;
+        }
+        
+        .featured-news {
+            background: linear-gradient(135deg, #8d2223 0%, #a85858 100%);
+            color: white;
+            padding: 3rem;
+            border-radius: 8px;
+            margin-bottom: 3rem;
+        }
+        
+        .featured-btn {
+            background: white;
+            color: #8d2223;
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.3s;
+        }
+        
+        .featured-btn:hover {
+            transform: scale(1.05);
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(141, 34, 35, 0.7), rgba(141, 34, 35, 0.7)), 
+                        url('assets/img/thumbnails/boc1.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 150px 0 80px;
+            text-align: center;
+            margin-top: 76px;
+        }
+
+        /* Footer contact links */
+#contact a {
+    color: #800000; /* marron */
+    text-decoration: underline; /* remove underline if you like */
+    transition: color 0.3s;
+}
+
+#contact a:hover {
+    color:#D9654D; /* lighter brown on hover */
+}
+/* Force navbar to stay maroon with white text */
+#mainNav,
+#mainNav.navbar-shrink,
+#mainNav.navbar-scrolled {
+  background-color: #8d2223 !important;
+  color: #ffffff !important;
+}
+
+#mainNav .navbar-brand,
+#mainNav .nav-link {
+  color: #ffffff !important;
+}
+
+#mainNav .nav-link:hover {
+  color: #ffcccc !important; /* optional lighter white on hover */
+}
+
+#mainNav .fa-align-justify {
+  color: #ffffff !important;
+}
+
+    </style>
+</head>
+
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="57" style="color: rgb(141,34,35);--bs-primary-rgb: 141,34,35;--bs-secondary-rgb: 141,34,35;--bs-success-rgb: 141,34,35;--bs-info-rgb: 141,34,35;--bs-warning-rgb: 141,34,35;--bs-danger-rgb: 141,34,35;--bs-light-rgb: 141,34,35;--bs-dark-rgb: 141,34,35;--bs-primary: rgb(141,34,35);background: #f7f3e8;">
+    
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav" style="background: #8d2223;color: #ffffff;">
+        <div class="container">
+            <div style="width: 100;height: 76; display: flex; align-items: center;">
+                <img src="assets/img/thumbnails/logo%20outline%20white%20no%20text.png" style="width: 100px;height: 80px;margin-bottom: 40px;transform: scale(2.50);">
+                <a class="navbar-brand" href="index.html" style="color: #f7f3e8; white-space: nowrap; margin-left: 20px;">Body Of Christ Deliverance Centre</a>
+            </div>
+            <button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-align-justify"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="leaders.html">Leadership Body</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            <h2 style="font-family: Carattere, serif; font-size: 65px; margin-bottom: 1rem;">Latest News & Updates</h2>
+            <p style="font-size: 1.2rem;">Stay connected with what's happening in our church community</p>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="featured-news" data-aos="fade-up" data-aos-duration="800">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <span class="news-category">Featured</span>
+                        <h3 style="font-family: Courgette, serif; font-size: 2.5rem; margin-bottom: 1rem;">2nd Anniversary & Ordination Service - December 7, 2025</h3>
+                        <p style="font-size: 1.1rem; line-height: 1.8;">Join us for a special double celebration! We'll be honoring God's faithfulness over 2 years of ministry with our Anniversary Service and ordaining new leaders. Come fellowship with us as we reflect on God's blessings and witness this significant moment in our church family. All are welcome!</p>
+                        <a href="#" class="featured-btn">Learn More</a>
+                    </div>
+                    <div class="col-lg-4 text-center mt-4 mt-lg-0">
+                        <i class="fas fa-calendar-alt" style="font-size: 6rem; opacity: 0.9;"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <div class="col">
+                    <div class="news-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                        <div class="news-image">
+                            <i class="fas fa-hands"></i>
+                        </div>
+                        <div class="p-4">
+                            <div class="news-date">February 16, 2025</div>
+                            <span class="news-category">Ordination</span>
+                            <h4 style="font-family: Courgette, serif; font-size: 1.5rem; margin-bottom: 0.75rem;">Ordination Service</h4>
+                            <p class="text-muted" style="line-height: 1.6;">Watch Apostle Annebella Williams, Pastor Damion Williams, Deacon Zachary Watson, Deaconess Sharon Ramsey, and Evangelist D'Andre Williams being ordained into the ministry.</p>
+                            <a href="https://www.youtube.com/live/hHLoxvy8xxE?si=JtdVywc2SoUcRt7Y" target="_blank" class="read-more">Watch Video →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="news-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                        <div class="news-image">
+                            <i class="fas fa-cross"></i>
+                        </div>
+                        <div class="p-4">
+                            <div class="news-date">January 27, 2025</div>
+                            <span class="news-category">Testimony</span>
+                            <h4 style="font-family: Courgette, serif; font-size: 1.5rem; margin-bottom: 0.75rem;">Paris' Testimony</h4>
+                            <p class="text-muted" style="line-height: 1.6;">She was on death's door but God gave her a miracle. Watch Paris' powerful testimony of healing and restoration.</p>
+                            <a href="https://youtu.be/c17soKYGQQI?si=csGgdtzAVbuhY16G" target="_blank" class="read-more">Watch Full Video →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="news-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                        <div class="news-image">
+                            <i class="fas fa-water"></i>
+                        </div>
+                        <div class="p-4">
+                            <div class="news-date">September 28, 2025</div>
+                            <span class="news-category">Baptism</span>
+                            <h4 style="font-family: Courgette, serif; font-size: 1.5rem; margin-bottom: 0.75rem;">Baptism Service</h4>
+                            <p class="text-muted" style="line-height: 1.6;">Runako Matthews and Adrianne Hall were baptized! Watch this blessed moment as they publicly declared their faith in Christ.</p>
+                            <a href="https://www.youtube.com/live/tEE_fkJjmGI?si=6HsgcMz0p7AN4jRi" target="_blank" class="read-more">Watch Video →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="news-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                        <div class="news-image">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="p-4">
+                            <div class="news-date">December 7, 2025</div>
+                            <span class="news-category">Upcoming Event</span>
+                            <h4 style="font-family: Courgette, serif; font-size: 1.5rem; margin-bottom: 0.75rem;">2nd Anniversary Service</h4>
+                            <p class="text-muted" style="line-height: 1.6;">We are celebrating 2 years of ministry! Join us as we honor God's faithfulness and give thanks for His blessings.</p>
+                            <a href="#" class="read-more">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="news-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+                        <div class="news-image">
+                            <i class="fas fa-church"></i>
+                        </div>
+                        <div class="p-4">
+                            <div class="news-date">December 7, 2025</div>
+                            <span class="news-category">Upcoming Event</span>
+                            <h4 style="font-family: Courgette, serif; font-size: 1.5rem; margin-bottom: 0.75rem;">Ordination Service</h4>
+                            <p class="text-muted" style="line-height: 1.6;">Join us for this special service as we ordain new leaders in ministry. Come witness and celebrate this significant moment in our church family.</p>
+                            <a href="#" class="read-more">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="news-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                        <div class="news-image">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <div class="p-4">
+                            <div class="news-date">December 25, 2025</div>
+                            <span class="news-category">Upcoming Event</span>
+                            <h4 style="font-family: Courgette, serif; font-size: 1.5rem; margin-bottom: 0.75rem;">Christmas Service</h4>
+                            <p class="text-muted" style="line-height: 1.6;">Celebrate the birth of our Savior with us! Join our Christmas service for worship, fellowship, and celebrating God's greatest gift to mankind.</p>
+                            <a href="#" class="read-more">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="news-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="700">
+                        <div class="news-image">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="p-4">
+                            <div class="news-date">December 31, 2025</div>
+                            <span class="news-category">Upcoming Event</span>
+                            <h4 style="font-family: Courgette, serif; font-size: 1.5rem; margin-bottom: 0.75rem;">Watch Night Service</h4>
+                            <p class="text-muted" style="line-height: 1.6;">Ring in the New Year with prayer and praise! Join us as we reflect on God's faithfulness and seek His blessings for the year ahead.</p>
+                            <a href="#" class="read-more">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading" data-aos="fade-down" data-aos-duration="600">Let's Get In Touch!</h2>
+                    <hr class="my-4" data-aos="fade-up" data-aos-duration="600">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 text-center mb-4" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -32 576 576" width="1em" height="1em" fill="currentColor" data-bss-hover-animate="tada" class="fa-3x mb-3 sr-contact">
+                        <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path>
+                    </svg>
+                    <p><a href="https://youtube.com/@bodyofchristdeliverancecentre?si=8TqN0qMO8f0XTVlq" target="_blank">Youtube</a></p>
+                </div>
+                <div class="col-lg-3 text-center mb-4" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="200">
+                    <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
+                    <p><a href="mailto:bodyofchristdeliverancecentre@gmail.com" target="_top">bodyofchristdeliverancecentre@gmail.com</a></p>
+                </div>
+                <div class="col-lg-3 text-center mb-4" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
+                    <i class="fa fa-phone fa-3x mb-3 sr-contact" data-bss-hover-animate="tada"></i>
+                    <p><a href="tel:+18766152012">1876-615-2012</a></p>
+                </div>
+                <div class="col-lg-3 text-center mb-4" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="400">
+                    <i class="fa fa-map-marker fa-3x mb-3 sr-contact"></i>
+                    <p><a href="https://www.google.com/maps/place/Body+of+Christ+Deliverance+Centre/@18.031352,-76.7940786,17z/data=!4m14!1m7!3m6!1s0x8edb3fe78b3c708b:0xb2a1b8254c16d77a!2sBody+of+Christ+Deliverance+Centre!8m2!3d18.031352!4d-76.7940786!16s%2Fg%2F11vjnynjxy!3m5!1s0x8edb3fe78b3c708b:0xb2a1b8254c16d77a!8m2!3d18.031352!4d-76.7940786!16s%2Fg%2F11vjnynjxy?entry=ttu" target="_blank">Shop #1, 8 Shortwood Rd, Kingston</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-4" style="background: #8d2223;color: #f7f3e8;">
+        <div class="container">
+            <p class="mb-0">© 2025 Body of Christ Deliverance Centre. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
+    <script src="assets/js/creative.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
